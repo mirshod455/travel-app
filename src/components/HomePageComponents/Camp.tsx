@@ -43,11 +43,7 @@ const CampSite = ({
 						{PEOPLE_URL.map(url => (
 							<Image
 								className='inline-block h-10 w-10 rounded-full'
-								src={
-									process.env.NODE_ENV === 'production'
-										? `${process.env.NEXT_PUBLIC_BASE_PATH}${url}`
-										: `${url}`
-								}
+								src={url}
 								key={url}
 								alt='person'
 								width={52}
