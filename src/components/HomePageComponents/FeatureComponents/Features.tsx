@@ -9,11 +9,7 @@ export const Features = () => {
 				{/* LeftSide */}
 				<div className='flex flex-1 lg:min-h-[900px] '>
 					<Image
-						src={
-							process.env.NODE_ENV === 'production'
-								? `${process.env.NEXT_PUBLIC_BASE_PATH}/phone.png`
-								: '/phone.png'
-						}
+						src='/phone.png'
 						alt='phone'
 						width={440}
 						height={1000}
@@ -25,11 +21,7 @@ export const Features = () => {
 				<div className='z-20 flex w-full flex-col lg:w-[60%]'>
 					<div className='relative'>
 						<Image
-							src={
-								process.env.NODE_ENV === 'production'
-									? `${process.env.NEXT_PUBLIC_BASE_PATH}/camp.svg`
-									: '/camp.svg'
-							}
+							src='/camp.svg'
 							alt='camp'
 							width={50}
 							height={50}
@@ -43,11 +35,7 @@ export const Features = () => {
 								key={feature.title}
 								title={feature.title}
 								description={feature.description}
-								icon={
-									process.env.NODE_ENV === 'production'
-										? `${process.env.NEXT_PUBLIC_BASE_PATH}${feature.icon}`
-										: `${feature.icon}`
-								}
+								icon={feature.icon}
 								variant={feature.variant}
 							/>
 						))}

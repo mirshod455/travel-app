@@ -7,16 +7,7 @@ export const NavBar = () => {
 	return (
 		<nav className='flexBetween max-container padding-container relative z-30 py-5'>
 			<Link href='/'>
-				<Image
-					src={
-						process.env.NODE_ENV === 'production'
-							? `${process.env.NEXT_PUBLIC_BASE_PATH}/hilink-logo.svg`
-							: '/hilink-logo.svg'
-					}
-					alt='Hilink'
-					width={74}
-					height={29}
-				/>
+				<Image src='/hilink-logo.svg' alt='Hilink' width={74} height={29} />
 			</Link>
 			<ul className='hidden h-full gap-12 lg:flex'>
 				{NAV_LINKS.map(link => (
@@ -33,11 +24,7 @@ export const NavBar = () => {
 				<Button
 					type='button'
 					label='Login'
-					icon={
-						process.env.NODE_ENV === 'production'
-							? `${process.env.NEXT_PUBLIC_BASE_PATH}/user.svg`
-							: '/user.svg'
-					}
+					icon='/user.svg'
 					variant='btn_dark_green'
 				/>
 			</div>

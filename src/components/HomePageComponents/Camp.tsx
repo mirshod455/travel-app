@@ -92,11 +92,7 @@ export const Camp = () => {
 						adventure
 					</p>
 					<Image
-						src={`${
-							process.env.NODE_ENV === 'production'
-								? `${process.env.NEXT_PUBLIC_BASE_PATH}/quote.svg`
-								: '/quote.svg'
-						}`}
+						src='/quote.svg'
 						alt='camp-2'
 						width={186}
 						height={219}

@@ -17,22 +17,14 @@ export const GetApp = () => {
 						<Button
 							type='button'
 							label='AppStore'
-							icon={
-								process.env.NODE_ENV === 'production'
-									? `${process.env.NEXT_PUBLIC_BASE_PATH}/apple.svg`
-									: '/apple.svg'
-							}
+							icon='/apple.svg'
 							variant='btn_white_text'
 							full
 						/>
 						<Button
 							type='button'
 							label='PlayMarket'
-							icon={
-								process.env.NODE_ENV === 'production'
-									? `${process.env.NEXT_PUBLIC_BASE_PATH}/android.svg`
-									: '/android.svg'
-							}
+							icon='/android.svg'
 							variant='btn_dark_green'
 							full
 						/>
@@ -41,16 +33,7 @@ export const GetApp = () => {
 
 				{/* RIGHT SIDE */}
 				<div className='flex flex-1 items-center justify-end'>
-					<Image
-						src={
-							process.env.NODE_ENV === 'production'
-								? `${process.env.NEXT_PUBLIC_BASE_PATH}/phone.png`
-								: '/phone.png'
-						}
-						alt='phone'
-						width={550}
-						height={870}
-					/>
+					<Image src='/phone.png' alt='phone' width={550} height={870} />
 				</div>
 			</div>
 		</section>

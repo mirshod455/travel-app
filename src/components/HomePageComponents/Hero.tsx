@@ -8,11 +8,7 @@ export const Hero = () => {
 
 			<div className='relative z-20 flex flex-1 flex-col xl:w-1/2'>
 				<Image
-					src={
-						process.env.NODE_ENV === 'production'
-							? `${process.env.NEXT_PUBLIC_BASE_PATH}/camp.svg`
-							: '/camp.svg'
-					}
+					src='/camp.svg'
 					alt='Camp'
 					width={50}
 					height={50}
@@ -32,11 +28,7 @@ export const Hero = () => {
 							.map((_, index) => (
 								<Image
 									key={index}
-									src={
-										process.env.NODE_ENV === 'production'
-											? `${process.env.NEXT_PUBLIC_BASE_PATH}/star.svg`
-											: '/star.svg'
-									}
+									src='/star.svg'
 									alt='start'
 									width={24}
 									height={24}
@@ -56,11 +48,7 @@ export const Hero = () => {
 					<Button
 						type='button'
 						label='How We Work'
-						icon={
-							process.env.NODE_ENV === 'production'
-								? `${process.env.NEXT_PUBLIC_BASE_PATH}/play.svg`
-								: '/play.svg'
-						}
+						icon='/play.svg'
 						variant='btn_white_text'
 					/>
 				</div>
@@ -71,16 +59,7 @@ export const Hero = () => {
 					<div className='flex flex-col'>
 						<div className='flexBetween'>
 							<p className='regular-16 text-gray-20'>Location</p>
-							<Image
-								src={
-									process.env.NODE_ENV === 'production'
-										? `${process.env.NEXT_PUBLIC_BASE_PATH}/close.svg`
-										: '/close.svg'
-								}
-								alt='close'
-								width={24}
-								height={24}
-							/>
+							<Image src='/close.svg' alt='close' width={24} height={24} />
 						</div>
 						<p className='bold-20 text-white'>Aguas Calientes</p>
 					</div>
